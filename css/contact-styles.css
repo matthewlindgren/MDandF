@@ -1,0 +1,15 @@
+body {
+    background-color: #141414;
+}
+
+h1 {
+    color: #f7f7f7;
+}
+
+hr {
+    background-color: #f7f7f7;
+}
+
+.menu a, hr {
+    color: #F7F7F7;
+}

@@ -7,10 +7,6 @@
     src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
-body {
-    color: #F7F7F7;
-}
-
 h1 {
     font-family: elza, sans-serif;
     font-weight: 500;
@@ -42,7 +38,8 @@ a {
     font-weight: 700;
     font-style: normal;
     letter-spacing: -0.1px;
-    font-size: 1.2vw
+    font-size: 1.2vw;
+    text-decoration: none;
 }
 
 hr {
