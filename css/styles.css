@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Panchang Medium';
+    src: url('../fonts/Panchang-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'JetBrains Regular';
+    src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
 body {
     color: #F7F7F7;
 }
@@ -14,6 +23,17 @@ h1 {
     left: 0;
     margin: 2vh 0 0 1vw;
     z-index: 999;
+}
+
+
+h2 {
+    font-family: elza, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.1px;
+    font-size: 5vw;
+    color: black;
+
 }
 
 a {
@@ -36,8 +56,27 @@ p {
     color: black;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: black;
+    padding: 12vh 6vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
 .tilt-bg {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -54,6 +93,7 @@ p {
     transform: translate(-50%, -50%);
     width: 120vw; /* Make the image larger than the viewport */
     height: 110vh;
+    object-fit: cover;
 }
 
 .menu {
@@ -133,4 +173,83 @@ p {
     display: flex;
     align-items: center;
     gap: 1.5vw;
+}
+
+.split-text {
+    display: flex;
+    margin: 10vh 2vw 5vh 2vw;
+    justify-content: space-between;
+}
+.split-text h2 {
+    width: 40vw;
+}
+.split-text p {
+    width: 40vw;
+    font-family: elza, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2vw;
+    text-align: right;
+}
+
+.underlay-image {
+    position: relative;
+    margin: 0;
+    background-color: black;
+}
+.quote-section {
+    position: absolute;
+    bottom: 20%;
+    left: 2vw;
+    display: flex;
+    gap: 2vw;
+}
+.quote-section :first-child {
+    font-family: "Panchang Medium", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+}
+.quote-section :last-child {
+    font-family: elza, sans-serif;
+    font-size: 2vw;
+    width: 20vw;
+}
+
+.footer-container {
+    display: flex;
+    gap: 3vw;
+    width: 25%;
+    margin: 0 0 6vw;
+}
+.footer-container > :first-child {
+    font-family: 'JetBrains Regular', Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: #F7F7F7;
+}
+.footer-container > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.footer-container > :nth-child(2) > h3 {
+    font-family: elza, sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #F7F7F7;
+}
+.footer-container > :nth-child(2) * {
+    font-family: elza, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #F7F7F7;
+    letter-spacing: 0.4px;
+}
+footer hr {
+    background: #F7F7F7;
+    height: 2vh;
+    width: 40%;
+    position: absolute;
+    bottom: 12vh;
+}
+footer div {
+    width: 50%;
 }
