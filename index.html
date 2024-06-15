@@ -9,7 +9,7 @@
     <title>MD+F Architecture Firm</title>
 </head>
 <body>
-    <div class="tilt-bg" data-tilt-max="0.01" data-tilt-speed="10">
+    <div class="tilt-bg" data-tilt data-tilt-full-page-listening data-tilt-max="0.01" data-tilt-speed="10" data-tilt-reset="false">
         <img src="./assets/model_bg_enlarged.png" alt="Paper model of a building" class="splash-screen">
     </div>
     <h1>MD+F</h1>
@@ -38,9 +38,10 @@
     <script type="text/javascript">
         VanillaTilt.init(document.querySelector(".card"), {
             max: 0.1,
-            speed: 100
+            speed: 100,
+            reset: false
         });
-        
+
         //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".splash-screen"));
     </script>
