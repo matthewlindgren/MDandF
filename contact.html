@@ -11,12 +11,73 @@
 <body>
     <h1>MD+F</h1>
     <div class="menu">
+        <a href="./index.html">Home</a>
+        <hr>
         <a>Company</a>
         <hr>
         <a>Our Story</a>
         <hr>
-        <a href="./contact.html">Get In Touch</a>
+        <a href="./contact.html" id="selected">Get In Touch</a>
         <hr>
     </div>
+    <br>
+    <div class="side-by-side">
+        <div>
+            <img src="./assets/staircase-stock.jpg">
+            <div class="social-buttons">
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://linkedin.com">Instagram</a>
+            </div>
+        </div>
+        <div>
+            <h2>Get in touch</h2>
+            <form class="contact-form">
+                <div class="form-field rel">
+                    <label for="name" class="required">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-field rel">
+                    <label for="email" class="required">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-field rel">
+                    <label for="phone" class="">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-field rel">
+                    <label for="subject" class="required">Subject</label>
+                    <input type="tel" id="subject" name="subject" required>
+                </div>
+                <div class="form-field rel message">
+                    <label for="message" class="required">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class="footer-container">
+                <p>01</p>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <a>Instagram</a>
+                        <a>LinkedIn</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-container">
+                <p>02</p>
+                <div>
+                    <h3>Contact</h3>
+                    <p>mdandfllc@gmail.com</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <img src="assets/stacked-wood-logo.png" style="width:40%">
+    </footer>
 </body>
 </html>

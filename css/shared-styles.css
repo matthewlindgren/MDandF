@@ -103,11 +103,17 @@ ul {
     flex-direction: column;
     width: 30vw;
 }
-
 .menu hr {
     margin: 1px 1vw 4px 0;
     height: 0.15vh;
     width: 30vw;
+}
+.menu a {
+    transition: transform 0.3s ease-in-out;
+    width: 10vw;
+}
+.menu a:hover, a#selected {
+    transform: translateX(2vw);
 }
 
 .landing-divider {

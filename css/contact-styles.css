@@ -4,12 +4,109 @@ body {
 
 h1 {
     color: #f7f7f7;
+    margin: -1vw 1vw -2vh;
+    position: relative;
+    font-size: 8vw;
+    max-width: 50%;
+}
+h2 {
+    color: #f7f7f7;
+    margin: 2vh 0;
 }
 
 hr {
     background-color: #f7f7f7;
+    height: 0.2vh;
 }
-
+label, input, textarea {
+    font-family: elza, sans-serif;
+    font-size: 1.8vw;
+    border: none;
+    background-color: #14141400;
+}
+label {
+    color: #f7f7f7a9;
+    font-weight: 600;
+    width: 30%;
+}
+input {
+    color: #f7f7f7;
+    font-weight: 400;
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+textarea {
+    resize: none;
+    height: 25vh;
+    width: 70%;
+    color: #f7f7f7;
+    font-size: 1.4vw;
+}
+button {
+    font-family: 'JetBrains Regular', monospace;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    background-color: #F7F7F7;
+}
+footer {
+    margin-top: 10vh;
+}
 .menu a, hr {
     color: #F7F7F7;
+}
+
+.side-by-side {
+    height: 100%;
+}
+.side-by-side > div {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 100vh;
+}
+.form-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid white 1px;
+}
+
+.rel {
+    position: relative;
+}
+
+.required:after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.side-by-side img {
+    width: 40vh;
+    max-width: 40vw;
+    object-fit: cover;
+    margin: 2vh 0 0 2vw;
+    overflow: hidden;
+}
+.side-by-side a {
+    font-family: 'JetBrains Regular', monospace;
+    padding: 12px 10px;
+    width: 20%;
+    border: none;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.social-buttons {
+    display: flex;
+    gap: 0.5vw;
+    padding: 0;
+    margin: 0 0 0 2vw;
 }
