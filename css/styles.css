@@ -1,18 +1,136 @@
-@font-face {
-    font-family: 'PPNeueMontreal Medium';
-    src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
-}
-
 body {
     color: #F7F7F7;
 }
 
 h1 {
-    font-family: 'PPNeueMontreal Medium';
+    font-family: elza, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -4px;
     font-size: 14vw;
     color: black;
-    position: static;
+    position: absolute;
     top: 0;
-    letter-spacing: -6px;
-    margin-left: 1vw
+    left: 0;
+    margin: 2vh 0 0 1vw;
+    z-index: 999;
+}
+
+a {
+    color: black;
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.1px;
+    font-size: 1.2vw
+}
+
+hr {
+    width: 100%;
+    color: black;
+    background-color: black;
+    border: none;
+}
+
+p {
+    color: black;
+}
+
+.tilt-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../assets/model_bg_enlarged.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.splash-screen {
+    position: absolute;
+    top: -10vh;
+    left: -10vw;
+    transform: translate(-50%, -50%);
+    width: 120vw; /* Make the image larger than the viewport */
+    height: 110vh;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.menu hr {
+    margin: 1px 1vw 4px 0;
+    height: 0.15vh;
+    width: 30vw;
+}
+
+.landing-divider {
+    position: absolute;
+    top: 70vh;
+    margin: 0 1vw;
+    width: 98%;
+    height: 0.3vh
+}
+
+.above-three-quarters {
+    position: absolute;
+    bottom: 32vh;
+    left: 50vw;
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1vw;
+    width: 25vw;
+}
+
+.below-three-quarters {
+    position: absolute;
+    top: 72vh;
+    left: 50vw;
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3vw;
+    width: 25vw;
+    line-height: 1.1;
+}
+
+.landing-link {
+    position: absolute;
+    top: 72vh;
+    left: 1vw;
+}
+
+.landing-link p {
+    font-family: elza, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.link-header {
+    font-size: 2vw;
+}
+
+.link-text {
+    font-size: 2.2vw;
+}
+
+.arrow {
+    height: 3vw;
+    width: auto;
+}
+
+.side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
 }
