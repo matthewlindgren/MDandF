@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PPNeueMontreal Medium';
+    src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
+}
+
+body {
+    color: #F7F7F7;
+}
+
+h1 {
+    font-family: 'PPNeueMontreal Medium';
+    font-size: 14vw;
+    color: black;
+    position: static;
+    top: 0;
+    letter-spacing: -6px;
+    margin-left: 1vw
+}
