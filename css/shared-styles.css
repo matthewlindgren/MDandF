@@ -36,6 +36,15 @@ p {
     color: black;
 }
 
+a {
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.1px;
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: 100vh;
@@ -49,6 +58,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+hr {
+    width: 100%;
+    color: #F7F7F7;
+    background-color: #F7F7F7;
+    border: none;
 }
 
 ul {
@@ -221,6 +237,63 @@ footer hr {
     font-size: 6vw;
 }
 
+.menu-scrap {
+    position: fixed;
+    top: 100vh;
+    left: 0.5vw;
+    right: 0.5vw;
+    height: 50vh;
+    transform: rotate(100deg);
+    transition: all 0.6s ease-in-out;
+    z-index: 99;
+}
+.menu-scrap .rel {
+    width: 100%;
+    height: 100%;
+}
+.menu-scrap img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.menu-scrap-options {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5vh;
+    margin: 25% 10%;
+    position: absolute;
+    top: 0;
+}
+.menu-scrap hr {
+    margin: 1px 1vw 4px 0;
+    height: 0.15vh;
+    width: 80%;
+}
+.menu-scrap a {
+    transition: transform 0.3s ease-in-out;
+    width: 50%;
+    display: inline-block;
+}
+.menu-scrap a:hover, a#selected {
+    transform: translateX(4vw);
+}
+
+.burger-button {
+    display: block;
+    position: absolute;
+    top: 8vw;
+    right: 4vw;
+    width: 12vw;
+    height: 2vh;
+    z-index: 999;
+    object-fit: contain;
+}
+.rel {
+    position: relative;
+}
+
 @media (min-width: 760px) {
     h1 {
         left: 0;
@@ -244,12 +317,7 @@ footer hr {
     
     a {
         color: black;
-        font-family: elza, sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: -0.1px;
         font-size: 1.2vw;
-        text-decoration: none;
     }
     
     hr {
@@ -400,6 +468,11 @@ footer hr {
     footer div {
         width: 50%;
     }
+
+    .menu-scrap {
+        display: none;
+    }
+    .burger-button {
+        display: none;
+    }
 }
-
-

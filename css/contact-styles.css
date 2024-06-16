@@ -80,10 +80,6 @@ footer {
     border-bottom: solid white 1px;
 }
 
-.rel {
-    position: relative;
-}
-
 .required:after {
     content: "*";
     position: absolute;
