@@ -73,6 +73,9 @@ footer img {
 .menu-scrap hr {
     background-color: black;
 }
+.menu-scrap a {
+    font-size: 4vw;
+}
 
 .side-by-side {
     margin-top: 12vh;
