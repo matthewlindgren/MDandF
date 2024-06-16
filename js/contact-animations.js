@@ -7,6 +7,7 @@ document.querySelector('.burger-button').addEventListener('click', () => {
         menuHidden = false;
         scrap.style.top = "0.5vh";
         scrap.style.transform = "rotate(0deg)";
+        burger.style.transform = "rotate(90deg)";
         setTimeout(function() {
             name.style.color = "#000000";
             burger.src = "./assets/burger-menu.svg"
@@ -15,7 +16,7 @@ document.querySelector('.burger-button').addEventListener('click', () => {
         menuHidden = true;
         scrap.style.top = "200vh";
         scrap.style.transform = "rotate(100deg)";
-        name.style.color = "#000000";
+        burger.style.transform = "rotate(0deg)";
         setTimeout(function() {
             name.style.color = "#F7F7F7";
             burger.src = "./assets/burger-menu-white.svg"

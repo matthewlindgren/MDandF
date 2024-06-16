@@ -14,7 +14,7 @@ h1 {
     letter-spacing: -2px;
     font-size: 14vw;
     color: black;
-    margin: 2vh 0 0 1vw;
+    margin: min(2vh, 2vw) 0 0 1vw;
     z-index: 999;
     position: absolute;
     top: 1vh;
@@ -286,7 +286,7 @@ footer hr {
 .burger-button {
     display: block;
     position: absolute;
-    top: 10vw;
+    top: min(46px, 8vw);
     right: 4vw;
     width: 12vw;
     height: 4vw;
