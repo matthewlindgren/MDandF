@@ -157,6 +157,9 @@ footer img {
     textarea {
         font-size: 1.4vw;
     }
+    button {
+        font-size: 1.2vw;
+    }
 
     footer img {
         width: 40%;
@@ -193,5 +196,6 @@ footer img {
     .social-buttons a {
         width: 6vw;
         font-size: 1vw;
+        font-weight: 400;
     }
 }

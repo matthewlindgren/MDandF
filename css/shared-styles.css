@@ -104,7 +104,6 @@ footer hr {
     position: absolute;
     top: -10vh;
     left: -10vw;
-    transform: translate(-50%, -50%);
     width: 120vw; /* Make the image larger than the viewport */
     height: 110vh;
     object-fit: cover;
