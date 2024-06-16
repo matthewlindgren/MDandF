@@ -119,7 +119,7 @@ footer hr {
     
 .above-three-quarters {
     position: absolute;
-    bottom: 40vh;
+    top: 59vh;
     right: 2vw;
     font-family: elza, sans-serif;
     font-weight: 700;
@@ -386,6 +386,7 @@ footer hr {
         right: revert;
         left: 50vw;
         bottom: 32vh;
+        top: revert;
     }
     
     .below-three-quarters {
