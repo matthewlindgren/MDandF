@@ -75,14 +75,17 @@
 
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelector(".card"), {
-            max: 0.1,
-            speed: 100,
-            reset: false
-        });
-
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll(".splash-screen"));
+        if(window.matchMedia("(any-hover: hover)").matches) {
+            VanillaTilt.init(document.querySelector(".card"), {
+                max: 0.1,
+                speed: 100,
+                reset: false
+            });
+    
+            //It also supports NodeList
+            VanillaTilt.init(document.querySelectorAll(".splash-screen"));
+        }
+        
     </script>
 </body>
 </html>
