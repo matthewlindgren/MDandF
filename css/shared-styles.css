@@ -11,67 +11,27 @@ h1 {
     font-family: elza, sans-serif;
     font-weight: 500;
     font-style: normal;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
     font-size: 14vw;
     color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
     margin: 2vh 0 0 1vw;
     z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
-
-
-h2 {
-    font-family: elza, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: -0.1px;
-    font-size: 5vw;
-    color: black;
-
-}
-
-a {
-    color: black;
-    font-family: elza, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: -0.1px;
-    font-size: 1.2vw;
-    text-decoration: none;
-}
-
-hr {
-    width: 100%;
-    color: black;
-    background-color: black;
-    border: none;
-}
-
+    
 p {
     color: black;
 }
 
 img {
     width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
-
-footer {
-    background-color: black;
-    padding: 12vh 6vw;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vw;
-}
-
+    
 .tilt-bg {
     position: relative;
     top: 0;
@@ -94,165 +54,264 @@ ul {
 }
 
 .menu {
-    position: absolute;
-    top: 0;
-    right: 0vw;
-    margin-right: 1vw;
-    margin-top: 1vw;
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-}
-.menu hr {
-    margin: 1px 1vw 4px 0;
-    height: 0.15vh;
-    width: 30vw;
-}
-.menu a {
-    transition: transform 0.3s ease-in-out;
-    width: 10vw;
-}
-.menu a:hover, a#selected {
-    transform: translateX(2vw);
+    display: none;
 }
 
 .landing-divider {
-    position: absolute;
-    top: 70vh;
-    margin: 0 1vw;
-    width: 98%;
-    height: 0.3vh
+    display: none;
 }
-
+    
 .above-three-quarters {
     position: absolute;
-    bottom: 32vh;
-    left: 50vw;
+    bottom: 40vh;
+    right: 2vw;
     font-family: elza, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.1vw;
-    width: 25vw;
+    width: 75vw;
+    text-align: right;
 }
 
 .below-three-quarters {
     position: absolute;
-    top: 72vh;
-    left: 50vw;
+    top: 61vh;
+    right: 2vw;
     font-family: elza, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.3vw;
-    width: 25vw;
+    width: 90vw;
+    text-align: right;
     line-height: 1.1;
+    font-size: 4vw
 }
 
 .landing-link {
     position: absolute;
-    top: 72vh;
-    left: 1vw;
+    left: 2vw;
+    top: 80vh;
 }
-
 .landing-link p {
     font-family: elza, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
 .link-header {
-    font-size: 2vw;
+    font-size: 6vw;
 }
-
 .link-text {
-    font-size: 2.2vw;
+    font-size: 8vw;
 }
-
 .arrow {
-    height: 3vw;
+    height: 8vw;
     width: auto;
 }
 
 .side-by-side {
     display: flex;
     align-items: center;
-    gap: 1.5vw;
-}
-
-.split-text {
-    display: flex;
-    margin: 10vh 2vw 5vh 2vw;
-    justify-content: space-between;
-}
-.split-text h2 {
-    width: 40vw;
-}
-.split-text p {
-    width: 40vw;
-    font-family: elza, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2vw;
-    text-align: right;
-}
-
-.underlay-image {
-    position: relative;
-    margin: 0;
-    background-color: black;
-}
-.quote-section {
-    position: absolute;
-    bottom: 20%;
-    left: 2vw;
-    display: flex;
-    gap: 2vw;
-}
-.quote-section :first-child {
-    font-family: "Panchang Medium", Arial, Helvetica, sans-serif;
-    font-size: 5vw;
-}
-.quote-section :last-child {
-    font-family: elza, sans-serif;
-    font-size: 2vw;
-    width: 20vw;
-}
-
-.footer-container {
-    display: flex;
     gap: 3vw;
-    width: 25%;
-    margin: 0 0 6vw;
 }
-.footer-container > :first-child {
-    font-family: 'JetBrains Regular', Arial, Helvetica, sans-serif;
-    font-size: 3vw;
-    color: #F7F7F7;
+
+
+
+@media (min-width: 860px) {
+    h1 {
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0vw;
+        margin-right: 1vw;
+        margin-top: 1vw;
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+    }
+    h2 {
+        font-family: elza, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: -0.1px;
+        font-size: 5vw;
+        color: black;
+    }
+    
+    a {
+        color: black;
+        font-family: elza, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: -0.1px;
+        font-size: 1.2vw;
+        text-decoration: none;
+    }
+    
+    hr {
+        width: 100%;
+        color: black;
+        background-color: black;
+        border: none;
+    }
+    
+    footer {
+        background-color: black;
+        padding: 12vh 6vw;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vw;
+    }
+
+    img {
+        height: revert;
+    }
+    
+    .menu {
+        display: block;
+    }
+    .menu hr {
+        margin: 1px 1vw 4px 0;
+        height: 0.15vh;
+        width: 30vw;
+    }
+    .menu a {
+        transition: transform 0.3s ease-in-out;
+        width: 10vw;
+    }
+    .menu a:hover, a#selected {
+        transform: translateX(2vw);
+    }
+    
+    .landing-divider {
+        position: absolute;
+        top: 70vh;
+        margin: 0 1vw;
+        width: 98%;
+        height: 0.3vh;
+        display: block;
+    }
+
+    .above-three-quarters {
+        font-size: 1.1vw;
+        text-align: left;
+        width: 25vw;
+        right: revert;
+        left: 50vw;
+        bottom: 32vh;
+    }
+    
+    .below-three-quarters {
+        left: 50vw;
+        right: revert;
+        font-size: 1.3vw;
+        width: 25vw;
+        text-align: left;
+        top: 72vh;
+    }
+    
+    .landing-link {
+        top: 72vh;
+        left: 1vw;
+    }
+    
+    .link-header {
+        font-size: 2vw;
+    }
+    
+    .link-text {
+        font-size: 2.2vw;
+    }
+    
+    .side-by-side {
+        gap: 1.5vw;
+    }
+    
+    .split-text {
+        display: flex;
+        margin: 10vh 2vw 5vh 2vw;
+        justify-content: space-between;
+    }
+    .split-text h2 {
+        width: 40vw;
+    }
+    .split-text p {
+        width: 40vw;
+        font-family: elza, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2vw;
+        text-align: right;
+    }
+    
+    .underlay-image {
+        position: relative;
+        margin: 0;
+        background-color: black;
+    }
+    .quote-section {
+        position: absolute;
+        bottom: 20%;
+        left: 2vw;
+        display: flex;
+        gap: 2vw;
+    }
+    .quote-section :first-child {
+        font-family: "Panchang Medium", Arial, Helvetica, sans-serif;
+        font-size: 5vw;
+    }
+    .quote-section :last-child {
+        font-family: elza, sans-serif;
+        font-size: 2vw;
+        width: 20vw;
+    }
+    
+    .footer-container {
+        display: flex;
+        gap: 3vw;
+        width: 25%;
+        margin: 0 0 6vw;
+    }
+    .footer-container > :first-child {
+        font-family: 'JetBrains Regular', Arial, Helvetica, sans-serif;
+        font-size: 3vw;
+        color: #F7F7F7;
+    }
+    .footer-container > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .footer-container > :nth-child(2) > h3 {
+        font-family: elza, sans-serif;
+        font-size: 3vw;
+        font-weight: 400;
+        color: #F7F7F7;
+    }
+    .footer-container > :nth-child(2) * {
+        font-family: elza, sans-serif;
+        font-size: 1.5vw;
+        font-weight: 400;
+        color: #F7F7F7;
+        letter-spacing: 0.4px;
+    }
+    footer hr {
+        background: #F7F7F7;
+        height: 2vh;
+        width: 40%;
+        position: absolute;
+        bottom: 12vh;
+    }
+    footer div {
+        width: 50%;
+    }
 }
-.footer-container > :nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-}
-.footer-container > :nth-child(2) > h3 {
-    font-family: elza, sans-serif;
-    font-size: 3vw;
-    font-weight: 400;
-    color: #F7F7F7;
-}
-.footer-container > :nth-child(2) * {
-    font-family: elza, sans-serif;
-    font-size: 1.5vw;
-    font-weight: 400;
-    color: #F7F7F7;
-    letter-spacing: 0.4px;
-}
-footer hr {
-    background: #F7F7F7;
-    height: 2vh;
-    width: 40%;
-    position: absolute;
-    bottom: 12vh;
-}
-footer div {
-    width: 50%;
-}
+
+
