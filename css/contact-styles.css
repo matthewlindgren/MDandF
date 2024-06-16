@@ -59,12 +59,14 @@ button {
     width: 30%;
     border: none;
     background-color: #F7F7F7;
+    color: black;
 }
 footer {
     margin-top: 10vh;
 }
 footer img {
     width: 100%;
+    object-fit: contain;
 }
 
 .menu-scrap * {
