@@ -21,6 +21,9 @@ h1 {
     left: 50%;
     transform: translate(-50%, 0);
 }
+h1:hover {
+    cursor: pointer;
+}
 
 h2 {
     font-family: elza, sans-serif;
@@ -286,10 +289,15 @@ footer hr {
     top: 10vw;
     right: 4vw;
     width: 12vw;
-    height: 2vh;
+    height: 4vw;
     z-index: 999;
     object-fit: contain;
+    transition: all 0.6s ease-in-out;
 }
+.burger-button:hover {
+    cursor: pointer;
+}
+
 .rel {
     position: relative;
 }

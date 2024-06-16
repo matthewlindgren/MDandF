@@ -22,3 +22,7 @@ document.querySelector('.burger-button').addEventListener('click', () => {
         }, 100);
     }
 });
+
+document.querySelector('h1').addEventListener('click', () => {
+    window.location.href = "./index.html";
+});
