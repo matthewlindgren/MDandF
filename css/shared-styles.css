@@ -239,7 +239,7 @@ footer hr {
 
 .menu-scrap {
     position: fixed;
-    top: 100vh;
+    top: 200vh;
     left: 0.5vw;
     right: 0.5vw;
     height: 50vh;
@@ -256,16 +256,6 @@ footer hr {
     height: auto;
     object-fit: contain;
 }
-
-.menu-scrap-options {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 0.5vh;
-    margin: 25% 10%;
-    position: absolute;
-    top: 0;
-}
 .menu-scrap hr {
     margin: 1px 1vw 4px 0;
     height: 0.15vh;
@@ -278,6 +268,16 @@ footer hr {
 }
 .menu-scrap a:hover, a#selected {
     transform: translateX(4vw);
+}
+
+.menu-scrap-options {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5vh;
+    margin: 25% 10%;
+    position: absolute;
+    top: 0;
 }
 
 .burger-button {
@@ -350,7 +350,7 @@ footer hr {
         display: block;
     }
     .menu hr {
-        margin: 1px 1vw 4px 0;
+        margin: 1px 1vw 2px 0;
         height: 0.15vh;
         width: 30vw;
     }
