@@ -7,10 +7,6 @@
     src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
-header {
-    
-}
-
 h1 {
     font-family: elza, sans-serif;
     font-weight: 500;
@@ -41,6 +37,8 @@ h2 {
 
 p {
     color: black;
+    font-family: elza, sans-serif;
+    font-weight: 400;
 }
 
 a {
