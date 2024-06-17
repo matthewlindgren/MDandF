@@ -1,3 +1,199 @@
 body {
     color: #F7F7F7;
 }
+
+.tilt-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../assets/model_bg_enlarged.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.splash-screen {
+    position: absolute;
+    top: -10vh;
+    left: -10vw;
+    width: 120vw; /* Make the image larger than the viewport */
+    height: 110vh;
+    object-fit: cover;
+}
+
+.landing-divider {
+    display: none;
+}
+
+.above-three-quarters {
+    position: absolute;
+    top: 59vh;
+    right: 2vw;
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 75vw;
+    text-align: right;
+    font-size: 2.6vw;
+}
+
+.below-three-quarters {
+    position: absolute;
+    top: 61vh;
+    right: 2vw;
+    font-family: elza, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 90vw;
+    text-align: right;
+    line-height: 1.1;
+    font-size: 3vw;
+}
+
+.landing-link {
+    position: absolute;
+    left: 2vw;
+    top: 80vh;
+}
+.landing-link p {
+    font-family: elza, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.link-header {
+    font-size: 6vw;
+}
+.link-text {
+    font-size: 8vw;
+}
+.arrow {
+    height: 8vw;
+    width: auto;
+}
+
+.split-text {
+    padding: 5vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.split-text p {
+    width: 85vw;
+    font-family: elza, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4vw;
+    text-align: right;
+    margin-left: 8vw;
+}
+
+.underlay-image {
+    position: relative;
+    margin: 0;
+    background-color: black;
+    height: 60vh;
+}
+.underlay-image img {
+    height: 60vh;
+}
+
+.quote-section {
+    position: absolute;
+    bottom: 20%;
+    left: 2vw;
+    display: flex;
+    gap: 2vw;
+}
+.quote-section :first-child {
+    font-family: "Panchang Medium", Arial, Helvetica, sans-serif;
+    font-size: 10vw;
+}
+.quote-section :last-child {
+    font-family: elza, sans-serif;
+    font-size: 4vw;
+    width: 60vw;
+}
+
+@media (min-width: 760px) {
+    .landing-divider {
+        position: absolute;
+        top: 70vh;
+        margin: 0 1vw;
+        width: 98%;
+        height: 0.3vh;
+        display: block;
+    }
+
+    .above-three-quarters {
+        font-size: max(1.1vw, 1.3vh);
+        text-align: left;
+        width: 25vw;
+        right: revert;
+        left: 50vw;
+        bottom: 32vh;
+        top: revert;
+    }
+    
+    .below-three-quarters {
+        left: 50vw;
+        right: revert;
+        font-size: max(1.3vw, 1.5vh);
+        width: 25vw;
+        text-align: left;
+        top: 72vh;
+    }
+    
+    .landing-link {
+        top: 72vh;
+        left: 1vw;
+    }
+    
+    .link-header {
+        font-size: max(2vw, 2.4vh);
+    }
+    
+    .link-text {
+        font-size: max(2.2vw, 2.8vh);
+    }
+
+    .arrow {
+        height: max(3vw, 3.6vh);
+    }
+    
+    .side-by-side {
+        gap: 1.5vw;
+    }
+    
+    .split-text {
+        margin: 10vh 2vw 5vh 2vw;
+        justify-content: space-between;
+        gap: revert;
+        flex-direction: row;
+    }
+    .split-text h2 {
+        width: 40vw;
+    }
+    .split-text p {
+        width: 40vw;
+        font-size: 2vw;
+        margin-left: revert;
+    }
+    .underlay-image {
+        position: relative;
+        margin: 0;
+        background-color: black;
+        height: revert;
+    }
+    .underlay-image img {
+        height: revert;
+    }
+
+    .quote-section :first-child {
+        font-size: 5vw;
+    }
+    .quote-section :last-child {
+        font-size: 2vw;
+        width: 20vw;
+    }
+}
