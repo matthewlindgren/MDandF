@@ -28,7 +28,7 @@ main {
 
 @media (min-width: 760px) {
     h1 {
-        font-size: 6.5em;
+        font-size: 8vw;
     }
 
     h2 {
@@ -37,6 +37,6 @@ main {
     }
 
     header {
-        height: 6.5em;
+        height: 8vw;
     }
 }
