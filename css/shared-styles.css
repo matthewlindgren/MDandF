@@ -7,6 +7,10 @@
     src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
+header {
+    
+}
+
 h1 {
     font-family: elza, sans-serif;
     font-weight: 500;
