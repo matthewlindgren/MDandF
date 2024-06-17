@@ -112,7 +112,7 @@ main {
 
 @media (min-width: 760px) {
     h1 {
-        font-size: calc(91.194px + (100vw - 760px) / 100 + 1vw);
+        font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
     }
 
     h2 {
@@ -129,7 +129,7 @@ main {
     }
 
     header {
-        height: calc((91.194px + (100vw - 760px) / 100 + 1vw));
+        height: calc((91.194px + (100vw - 760px) / 100 + 2vw));
     }
 
     .company-callout {
