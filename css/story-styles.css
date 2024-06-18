@@ -2,3 +2,26 @@ body {
     background-color: #F7f7f7;
 }
 
+h1 {
+    margin-top: 0;
+}
+
+hr {
+    display: block;
+    color: black;
+    background-color: black;
+    border: none;
+    width: 96%;
+    margin: 0 auto;
+    height: 2px;
+}
+
+@media (min-width: 760px) {
+    h1 {
+        font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
+    }
+
+    hr {
+        width: 98%;
+    }
+}
