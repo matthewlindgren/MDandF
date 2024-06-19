@@ -15,6 +15,12 @@ h2 {
     font-size: 14vw;
 }
 
+h3 {
+    font-size: 6vw;
+    font-weight: 600;
+    font-family: elza, sans-serif;
+}
+
 hr {
     display: block;
     color: black;
@@ -29,6 +35,15 @@ strong {
     font-weight: 600;
     font-size: 2vw;
     text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+}
+
+.menu-scrap hr {
+    color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 .hero-section {
@@ -71,7 +86,7 @@ strong {
     gap: 1px;
     position: absolute;
     left: 1px;
-    right: 2px;
+    right: 1px;
     background-color: black;
     padding: 1px;
 }
@@ -88,10 +103,46 @@ strong {
     text-transform: uppercase;
     color: black;
     box-shadow: 0 0 0 1px black;
+    transition: border-radius 0.3s;
+    width: 100%;
+}
+
+.member::after {
+    content: '+';
+    position: absolute;
+    right: 4vw;
+    transform: scale(1.5);
+}
+.member.active::after {
+    content: '-';
 }
 
 .member-details {
     display: none;
+    background-color: #f7f7f7;
+    padding: 2vw;
+}
+.member-photo {
+    width: 33vw;
+    height: auto;
+}
+
+.member-details p {
+    font-size: 3.6vw;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.active {
+    background-color: black;
+    color: #f7f7f7;
+    border-radius: 0;
+    display: flex;
+}
+
+.hover-photo {
+    display: none;
+    z-index: 2;
 }
 
 @media (min-width: 760px) {
@@ -99,7 +150,68 @@ strong {
         font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
     }
 
+    h2 {
+        font-size: 10vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
     hr {
         width: 98%;
+    }
+
+    .hero-section {
+        margin-bottom: 12vw;
+    }
+
+    .caption {
+        font-size: 1.8vw;
+    }
+    .caption strong {
+        font-size: 1.2vw;
+    }
+
+    .descriptor {
+        font-size: 1.2vw;
+    }
+
+    .story {
+        grid-column: 2 / -1;
+        font-size: 2vw;
+        text-align:right;
+    }
+
+    .member {
+        padding: 2vw;
+        font-size: 2vw;
+    }
+
+    .hover-photo {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        width: 20%;
+        transform: translateY(-50%);
+        height: auto;
+    }
+
+    .member:hover ~ .hover-photo, .hover-photo:hover {
+        display: block;
+    }
+    .member:hover.active ~ .hover-photo {
+        display: none;
+    }
+
+    .member-details p {
+        font-size: 1.8vw;
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    .member:hover {
+        border-radius: 5.5vw;
     }
 }

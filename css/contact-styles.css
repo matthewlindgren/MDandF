@@ -135,9 +135,9 @@ footer img {
 
 @media (min-width: 760px) {
     h1 {
-        margin: 1vh 1vw -2vh;
+        margin: 0 0 0 1vw;
         position: relative;
-        font-size: 8vw;
+        font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
         max-width: 50%;
     }
     h2 {
