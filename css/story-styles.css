@@ -65,6 +65,35 @@ strong {
     margin: 1vw;
 }
 
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    position: absolute;
+    left: 1px;
+    right: 2px;
+    background-color: black;
+    padding: 1px;
+}
+
+.member {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    padding: 4vw;
+    font-family: elza, sans-serif;
+    font-weight: 600;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0 0 0 1px black;
+}
+
+.member-details {
+    display: none;
+}
+
 @media (min-width: 760px) {
     h1 {
         font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
