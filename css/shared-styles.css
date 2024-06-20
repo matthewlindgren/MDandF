@@ -181,7 +181,7 @@ footer hr {
 }
 .menu-scrap hr {
     margin: 1px 1vw 4px 0;
-    height: 0.15vh;
+    height: 1px;
     width: 80%;
 }
 .menu-scrap a {
@@ -283,7 +283,7 @@ footer hr {
     }
     .menu hr {
         margin: 1px 1vw 2px 0;
-        height: 0.15vh;
+        height: 1px;
         width: 30vw;
     }
     .menu a {

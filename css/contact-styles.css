@@ -143,7 +143,7 @@ footer img {
         margin: 0 0 0 1vw;
         position: relative;
         font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
-        max-width: 50%;
+        width: calc(2.6 * (91.194px + (100vw - 760px) / 100 + 2vw));
     }
     h2 {
         margin: 2vh 0;
