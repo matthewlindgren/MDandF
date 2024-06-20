@@ -141,5 +141,22 @@
       <hr />
     </footer>
     <script type="text/javascript" src="js/light-animations.js"></script>
+    
+    <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+    <script>
+      // from Lenis GitHub documentation
+      const lenis = new Lenis()
+
+      lenis.on('scroll', (e) => {
+        console.log(e)
+      })
+
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+
+      requestAnimationFrame(raf)
+    </script>
   </body>
 </html>
