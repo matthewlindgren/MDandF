@@ -262,6 +262,7 @@ footer hr {
         transition: transform 0.3s ease-in-out;
         width: 10vw;
         display: inline-block;
+        margin: 4px 0 -6px 0;
     }
     .menu a:hover, a#selected {
         transform: translateX(2vw);

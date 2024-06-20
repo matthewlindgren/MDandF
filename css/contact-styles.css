@@ -40,7 +40,8 @@ input {
     position: absolute;
     right: 0;
     font-size: 2.2vw;
-    margin-top: -2px
+    margin-top: -2px;
+    transform: translateY(2px);
 }
 textarea {
     resize: none;
