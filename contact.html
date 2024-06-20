@@ -11,6 +11,7 @@
     <title>MD+F Get In Touch</title>
   </head>
   <body>
+    <span class="title-block block"></span>
     <h1>MD+F</h1>
     <img
       class="burger-button"
@@ -103,21 +104,10 @@
     </footer>
     <script type="text/javascript" src="js/contact-animations.js"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
-    <script>
-      // from Lenis GitHub documentation
-      const lenis = new Lenis()
-
-      lenis.on('scroll', (e) => {
-        console.log(e)
-      })
-
-      function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-      }
-
-      requestAnimationFrame(raf)
-    </script>
+    <script src="./js/text-animations.js"></script>
   </body>
 </html>

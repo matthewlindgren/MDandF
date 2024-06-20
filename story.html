@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+		<span class="title-block block"></span>
         <h1>MD+F</h1>
         <img class="burger-button" src="./assets/burger-menu.svg" alt="Hambuerger menu" />
         <div class="menu">
@@ -149,37 +150,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
-    <script>
-      gsap.registerPlugin(ScrollTrigger)
-
-      const splitTypes = document.querySelectorAll('.split-text')
-      splitTypes.forEach((word, i) => {
-        const text = new SplitType(word, { types: 'words' })
-        
-        gsap.from(text.words, {
-          scrollTrigger: {
-            trigger: word,
-            start: 'top 40%',
-            end: 'top 20%',
-            scrub: true,
-            markers: false
-          }, opacity: 0.2, stagger: 0.2
-        })
-      })
-      
-      // from Lenis GitHub documentation
-      const lenis = new Lenis()
-
-      lenis.on('scroll', (e) => {
-        console.log(e)
-      })
-
-      function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-      }
-
-      requestAnimationFrame(raf)
-    </script>
+    <script src="./js/text-animations.js"></script>
 </body>
 </html>
