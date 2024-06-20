@@ -56,7 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
 							left: ${h1Left - 5}px;
 							right: auto;
 					}
-					50% {
+					35% {
+							width: ${h1Width + 10}px;
+							right: ${h1Right - 5}px;
+					}
+					65% {
 							width: ${h1Width + 10}px;
 							right: ${h1Right - 5}px;
 					}
