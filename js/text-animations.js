@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// GSAP split text animation
 const splitTypes = document.querySelectorAll(".split-text");
 splitTypes.forEach((word, i) => {
 	const text = new SplitType(word, { types: "words" });
@@ -16,6 +17,28 @@ splitTypes.forEach((word, i) => {
 		stagger: 0.1,
   });
 });
+
+// GSAP fade in, enlarge, move up animation
+gsap.fromTo('.introduce', 
+	{
+		opacity: 0,
+		scale: 0.8,
+		y: "6vh"
+	},
+	{
+		opacity: 1,
+		scale: 1,
+		y: 0,
+		duration: 1,
+		ease: "power2.out",
+		scrollTrigger: {
+			trigger: '.introduce',
+			start: "top 80%",
+			toggleActions: 'play none none none'
+		}
+	}
+);
+
 
 // from Lenis GitHub documentation
 const lenis = new Lenis();
@@ -53,21 +76,22 @@ document.addEventListener("DOMContentLoaded", function () {
 			@keyframes titleBlock {
 					0% {
 							width: 0;
-							left: ${h1Left - 5}px;
+							left: ${h1Left + 5}px;
 							right: auto;
 					}
 					35% {
-							width: ${h1Width + 10}px;
-							right: ${h1Right - 5}px;
+						left: ${h1Left + 5}px;
+						width: ${h1Width + 10}px;
+						right: ${h1Right - 15}px;
 					}
 					65% {
-							width: ${h1Width + 10}px;
-							right: ${h1Right - 5}px;
+						width: ${h1Width + 10}px;
+						right: ${h1Right - 15}px;
 					}
 					100% {
 							width: 0;
 							left: auto;
-							right: ${h1Right - 5}px;
+							right: ${h1Right - 15}px;
 					}
 			}
 	`;
