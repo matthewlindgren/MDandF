@@ -46,7 +46,7 @@
 			<img class="hero-image" src="./assets/team-bw.jpg" alt="Group photo of Matthew D, Thivya, Shelby, and Matthew L." />
 			<p class="descriptor">Our team</p>
 			<p class="caption"><strong>In order from left to right:</strong> Matthew Daines, Thivya Prakash, Shelby Stress, Matthew Lindgren</p>
-			<p class="story">We are a collective of driven and inspired University of Michigan students with backgrounds in a wide variety of disciplines including architecture, computer science, and English. Our goal is to promote affordable & thoughtful repair, restoration, and realization through projects involving architectural design, drafting, and site measuring, as well as wall repair, painting, and furniture assembly. The primary aim of our work is to make a positive impact on the local community and to improve the standard of living of individuals while fostering in them a sense of pride and security in their homes. We believe that having a comfortable, fully functioning living space is integral to an invigorating and stable day to day experience. <br><br>At MD+F, we act akin to the composition of fibers of the wood we so often work with due to our various yet complementary skill sets and interests. Just like grains of wood, while different, seamlessly fit together, so does our team. Our sense of compatibility translates into our projects so that our customers will feel satisfied with the implementation and realization of their requests.</p>
+			<p class="story split-text">We are a collective of driven and inspired University of Michigan students with backgrounds in a wide variety of disciplines including architecture, computer science, and English. Our goal is to promote affordable & thoughtful repair, restoration, and realization through projects involving architectural design, drafting, and site measuring, as well as wall repair, painting, and furniture assembly. The primary aim of our work is to make a positive impact on the local community and to improve the standard of living of individuals while fostering in them a sense of pride and security in their homes. We believe that having a comfortable, fully functioning living space is integral to an invigorating and stable day to day experience. <br><br>At MD+F, we act akin to the composition of fibers of the wood we so often work with due to our various yet complementary skill sets and interests. Just like grains of wood, while different, seamlessly fit together, so does our team. Our sense of compatibility translates into our projects so that our customers will feel satisfied with the implementation and realization of their requests.</p>
 		</div>
 		<h2>Meet the team</h2>
 		<div class="team">
@@ -145,8 +145,28 @@
 	<script src="./js/light-animations.js"></script>
 	<script src="./js/story-animations.js"></script>
 	
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
     <script>
+      gsap.registerPlugin(ScrollTrigger)
+
+      const splitTypes = document.querySelectorAll('.split-text')
+      splitTypes.forEach((word, i) => {
+        const text = new SplitType(word, { types: 'words' })
+        
+        gsap.from(text.words, {
+          scrollTrigger: {
+            trigger: word,
+            start: 'top 40%',
+            end: 'top 20%',
+            scrub: true,
+            markers: false
+          }, opacity: 0.2, stagger: 0.2
+        })
+      })
+      
       // from Lenis GitHub documentation
       const lenis = new Lenis()
 

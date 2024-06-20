@@ -165,7 +165,7 @@ main {
         margin: 0;
         z-index: 999;
     }
-    .side-by-side * {
+    .side-by-side > * {
         padding: 6% 6% 0 2%;
         text-align: justify;
         text-justify: auto;
