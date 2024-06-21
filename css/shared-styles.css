@@ -16,28 +16,45 @@
     }
 }
 
+@keyframes titleBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
 h1 {
     font-family: elza, sans-serif;
     font-weight: 500;
     font-style: normal;
     letter-spacing: -2px;
     color: black;
-    margin: 0 0 0 1vw;
-    z-index: 999;
-    position: absolute;
-    top: 2vh;
-    left: 50%;
-    transform: translate(-50%, 0);
     font-size: 14vw;
     -webkit-animation: fadeIn 1s forwards;
     -o-animation: fadeIn 1s forwards;
     animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
     opacity: 0;
-    line-height: 1;
 }
 h1:hover {
     cursor: pointer;
+}
+
+.logo-container {
+    position: absolute;
+    margin: 0 0 0 1vw;
+    z-index: 999;
+    top: 2vh;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 h2 {
@@ -48,6 +65,7 @@ h2 {
     font-size: 8vw;
     color: black;
     width: 80vw;
+    position: inline-block;
 }
 
 p {
@@ -110,16 +128,29 @@ footer hr {
     border: none;
 }
 
-.title-block {
-    top: 1.8vh; /* depends on height of h1 */
+.slider-text {
+    -webkit-animation: fadeIn 1s forwards;
+    -o-animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
+
+.slider-container span {
+    display: inline-block;
+}
+
+.slider-container {
+    display: inline-block;
+}
+
 .block {
     position: absolute;
     width: 0%;
-    height: 12vw; /* depends on height of h1 */
+    height: 80%;
     background: black;
-    animation: titleBlock 1s cubic-bezier(.74, .06, .4, .92) forwards;
-    animation-delay: 0.4s;
+    animation: titleBlock 1.6s cubic-bezier(.74, .06, .4, .92) forwards;
+    animation-delay: 0s;
     z-index: 999;
 }
 
@@ -230,9 +261,6 @@ footer hr {
 @media (min-width: 760px) {
     h1 {
         color: black;
-        top: 1vh;
-        left: 0;
-        transform: translate(0, 0);
     }
 
     .menu {
@@ -245,6 +273,13 @@ footer hr {
         flex-direction: column;
         width: 30vw;
     }
+
+    .logo-container {
+        top: 1vh;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
     h2 {
         font-size: 5vw;
         width: revert;

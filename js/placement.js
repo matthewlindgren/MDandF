@@ -1,11 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menu = document.querySelector('.menu');
-    const header = document.querySelector('header');
 
-    const menuRect = menu.getBoundingClientRect();
+document.addEventListener("DOMContentLoaded", () => {
+	logoDiv = document.querySelector('.logo-container');
+	header = document.querySelector('header');
 
-    const menuHeight = menu.offsetHeight;
-    const menuTop = menuRect.top;
-
-    header.style.height = `${menuHeight + menuTop + 0.01 * window.innerWidth}px`;
+	header.style.height = `${logoDiv.offsetHeight + 0.01 * window.innerHeight}px`;
 });

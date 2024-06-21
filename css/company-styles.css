@@ -7,9 +7,11 @@ h1 {
 }
 
 h2 {
+    display: inline-block;
     font-size: 12vw;
     font-weight: 400;
     text-transform: uppercase;
+    width: auto;
 }
 
 hr {
@@ -28,6 +30,14 @@ header {
 
 main {
     padding: 2%;
+}
+
+.slider-container span {
+    display: inline-block;
+}
+
+.slider-container {
+    display: inline-block;
 }
 
 .menu-scrap hr {
