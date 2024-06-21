@@ -6,7 +6,6 @@ h1 {
     color: #f7f7f7;
 }
 h2 {
-    margin-top: 10vh;
     color: #f7f7f7;
 }
 
@@ -68,6 +67,10 @@ footer {
 footer img {
     width: 100%;
     object-fit: contain;
+}
+
+.slider-container {
+    margin-top: 10vh;
 }
 
 .menu-scrap * {
@@ -145,9 +148,6 @@ footer img {
         font-size: calc(91.194px + (100vw - 760px) / 100 + 2vw);
         width: calc(2.6 * (91.194px + (100vw - 760px) / 100 + 2vw));
     }
-    h2 {
-        margin: 2vh 0;
-    }
 
     a {
         font-size: 1.4vw;
@@ -170,6 +170,10 @@ footer img {
 
     footer img {
         width: 40%;
+    }
+
+    .slider-container {
+        margin: 2vh 0;
     }
     
     .menu a, hr {

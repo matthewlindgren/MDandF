@@ -64,8 +64,8 @@ h2 {
     letter-spacing: -0.1px;
     font-size: 8vw;
     color: black;
-    width: 80vw;
-    position: inline-block;
+    width: auto;
+    display: inline-block;
 }
 
 p {
